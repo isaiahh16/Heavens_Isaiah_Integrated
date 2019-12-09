@@ -2,26 +2,51 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>Six Photos - Contact</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
 	<section id="topBar"></section><!--end topBar-->
 	<div id="siteContainer">
     	<header id="mainHeader">
-        	<div id="logo"><p>Logo</p></div><!--end logo-->
+        	<div id="logo"><img src="images/sixphotos.svg" alt="six photos logo" width="315"></div><!--end logo-->
             <nav class="mainNav">
                 <h2 class="hidden">Main Navigation</h2>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
                     <li class="selected"><a href="#">CONTACT</a></li>
                 </ul>
             </nav><!--end mainNav-->
         </header><!--end mainHeader-->
         <section id="contentCon">
-        	<div id="content1"><p>Content Area 1</p></div><!--end content1-->
-        	<div id="content2"><p>Content Area 2</p></div><!--end content2-->
+        	<div id="content1">
+             <section id="mainContact">
+                    <h2>Contact Us</h2>
+            <section id="contactArea">
+                <h2 class="hidden">Contact form</h2>
+                <p id="contactText">Contact us for any questions or if you have pictures of your own to share.
+            </p> 
+            <form id="contactForm" action="form.php" method="post">
+                    <label for="name">Name: (required)</label>
+                    <input type="text" required id="name" name="fullName" size="30" placeholder="Enter your name">
+                    
+                    <label for="email">Email: (will not be published)</label>
+                    <input type="email" required id="email" size="30" placeholder="Enter your Email">
+                    
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments" required cols="50" rows="8"></textarea>
+                   
+                    <input id="submit" type="submit" value="Submit">
+            </form>
+            </section><!--end contactArea-->     
+            </div><!--end content1-->
+        	<div id="content2">  
+            <p>47 Queens Park Crescent E</p> 
+            <p>Toronto Ontario, Canada </p>
+            <img class="map" src="images/map.png" alt="map of our location" width="346" height="319">
+        </section><!--end mainContact-->   
+            </div><!--end content2-->
         </section><!--end contentCon-->
         <footer id="mainFooter">
         	<div class="footerNav">
@@ -32,7 +57,6 @@
                     <li class="selected"><a href="#">CONTACT</a></li>
                 </ul>   
             </div><!--end FooterNav-->
-
             <div class="socialMedia">
             <h2 class="hidden">Social Media</h2>
             <ul id="iconNav">
