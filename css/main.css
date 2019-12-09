@@ -4,14 +4,14 @@
 /*Remove this rule, this is only for demo purposes to make the boxes black with white text
 The line height on the <p> tag gives each box a height value*/
 
-p
+/*p
 {
 	color: #fff;
 	line-height: 100px;
 	background: #000;
 	text-align: center;
 	margin: 0;
-}
+}*/
 
 /*basic reset*/
 /*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
@@ -63,7 +63,7 @@ a:hover, a:active
 /*section is block level and no width specidied therefore stretches full screen*/
 #topBar
 {
-	background-color: #000;
+	background-color: #185292;
 	height: 20px;
 }
 
@@ -98,10 +98,42 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 /*This is also a flex item*/
 /*We use margin left auto to send it all the way to the right*/
-#mainNav 
+.mainNav
 {
-	margin-left: auto;
-	width: 500px;
+  width: 500px;
+  height: 25px;
+  margin-top: 45px;
+  margin-left: auto;
+}
+
+.mainNav ul
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+.mainNav ul li {  
+  font-size: 14px;
+  display: inline;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.mainNav ul li a
+{
+  color: #2073a8;
+  padding: 5px;
+}
+
+.mainNav ul li a:hover {
+  padding: 5px;
+  background-color: #ddeff7;
+}
+
+.selected
+{
+  padding: 5px 0px 5px 0px;
+  background-color: #ddeff7;
 }
 
 #promo 
@@ -161,9 +193,55 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
   	justify-content: flex-start;
 }
 
-#footerNav 
-{
-	width: 500px;
+.footerNav {
+  width: 380px;
+  height: 25px;
+  margin-left: 20px;
+}
+
+.footerNav ul {
+  padding: 0;
+  list-style-type: none;
+  width: 500px;
+  margin-left: 0;
+}
+
+.footerNav ul li { 
+  cursor: pointer;
+  display: inline;
+  margin-right: 25px;
+  font-size: 12px;  
+}
+
+.footerNav ul li a {
+  color: #333;
+}
+
+.footerNav ul li a:hover {
+  color: #999;
+}
+
+.socialMedia {
+  height: 45px;
+  margin-left: auto;
+  margin-top: 28px;
+  margin-right: 10px;
+}
+
+#iconNav img {
+  width: 45px;
+  height: 45px;
+}
+
+#iconNav {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+#iconNav li {
+  display: inline;
+  margin-right: 10px;
 }
 
 #copyRight 
@@ -172,7 +250,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	width: 310px;
 }
 
-/*Page 2 - Notice we are using one style sheet for all of the pages*/
+/*contact - Notice we are using one style sheet for all of the pages*/
 
 #contentCon {
 	margin-top: 40px;
@@ -200,46 +278,73 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	width: 440px;
 }
 
-/*Page 3*/
+/*gallery*/
 
 #productImages 
 {
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: space-between;
+  padding-right: 20px;
+  padding-top: 20px;
+  width: 920px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /*Get rid of this, here just to give different height*/
-#productImages p
-{
-	line-height: 250px;
-}
 
 .productImg 
 {
-	width: 280px;
+	width: 282px;
+	height: 302px;
+	margin-bottom: 30px;
 }
 
 
-#contentAreaBig
+.contentAreaBig
 {
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
+  height: 249px;
+  width: 920px;
+  position: relative; /*set to relative to anything that uses absolute inside will positioned to the top left corner of this element*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.galleryConArea {
+		background: url(../images/treeline.jpg) no-repeat bottom;
+	background-size: 920px 249px;
 }
 
 /*Get rid of this, here just to give different height*/
-#contentAreaBig p 
+.contentAreaBig h2
 {
-	line-height: 300px;
+	color: #fff;
+  	font-size: 31px;
+  	letter-spacing: -1px;
+  	text-align: center;
 }
 
-#promoImageBig
+.promoImageBig
 {
-	width: 920px;
+  height: 249px;
+  width: 920px;
+  position: relative; /*set to relative to anything that uses absolute inside will positioned to the top left corner of this element*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.indexPromo {
+	background: url(../images/nightskyline.jpg) no-repeat bottom;
+	background-size: 920px 249px;
+}
+
+.promoImageBig h2 {
+	color: #fff;
+  	font-size: 31px;
+  	letter-spacing: -1px;
+  	text-align: center;
 }
 
 
@@ -253,5 +358,6 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 .productDescLargeRight 
 {
 	width: 410px;
+	height: 302px;
 }
 
