@@ -141,36 +141,6 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	padding-bottom: 40px;
 }
 
-/*Get rid of this, here just to give different height to productInfo*/
-#productInfo p 
-{
-	line-height: 300px;
-}
-
-.productDesc 
-{
-	width: 200px;
-}
-
-#mainFooter 
-{
-	margin-top: 40px;
-	margin-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: flex-start;
-}
-
-#footerNav 
-{
-	width: 500px;
-}
-
-#copyRight 
-{
-	margin-left: auto;
-	width: 310px;
-}
 
 /*Page 2 - Notice we are using one style sheet for all of the pages*/
 
@@ -181,23 +151,6 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
-}
-
-/*Get rid of this, here just to give different height to promo*/
-#contentCon p 
-{
-	line-height: 630px;
-}
-
-#content1 
-{
-	width: 440px;
-}
-
-#content2 
-{
-	margin-left: auto;
-	width: 440px;
 }
 
 /*Page 3*/
@@ -211,38 +164,6 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	flex-direction: row;
   	justify-content: space-between;
 }
-
-/*Get rid of this, here just to give different height*/
-#productImages p
-{
-	line-height: 250px;
-}
-
-.productImg 
-{
-	width: 280px;
-}
-
-
-#contentAreaBig
-{
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-}
-
-/*Get rid of this, here just to give different height*/
-#contentAreaBig p 
-{
-	line-height: 300px;
-}
-
-#promoImageBig
-{
-	width: 920px;
-}
-
-
 /*Page 4*/
 
 .productDescLargeLeft 
